@@ -1,12 +1,17 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700;900&display=swap');
+    body{
+        font-family:"Roboto",sans-serif;
+    }
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
-.fast-section{
+/*--start--first-section*/
+.header{
     background-image: url(./images/Rectangle\ 237.png);
     width: 100%;
-    height: 100vh;
+    height: 620px;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -14,45 +19,54 @@
 .lets-help{
     padding-top: 100px;
 }
-.lets-help h1{
+.lets-help h1 {
     font-size: 65px;
     color: #ffff;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    line-height: 76px;
 }
 .lets-help p{
     font-size: 18px;
     color: #ffff;
     padding-top: 27px;
+    display: block;
 }
-.button{
-    padding-top: 40px;
-}
-.button .donate-btn{
+.donate-btn {
+    width: 120px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
     text-decoration: none;
     background-color: #FF5959;
-    padding: 15px 28px;
+    padding: 15px 10px;
     border-radius: 7px;
     color: #ffff;
     font-size: 20px;
 }
 /*end fast section */
-/*start-scend-section*/
-.scend-section{
-    width: 100%;
-    height: 710px;
+/*start-second-section*/
+.donation {
+    margin: 85px 0px;
 }
-.donate-today{
-    padding-top: 130px;
+
+.donate-title {
+    width: 100%;
+    margin: auto;
+    display: block;
     text-align: center;
 }
-.donate-today h2{
-    font-size: 45px;
-    font-weight: bold;
+
+.donate-title h2 {
+    font-size: 50px;
+    margin: 20px 0;
+    width: 100%;
+    text-align:center;
+    display: block;
+    font-weight: 900;
 }
-.donate-today p{
-    padding-top: 20px;
-    font-size: 18px;
-    color: #707070;
-}
+
+
 
 .donation-amount {
     display: flex;
@@ -71,7 +85,7 @@
 #different-style {
     color: #ff5959;
     border: 2px solid;
- background: #FFEEEE;
+    background: #FFEEEE;
 }
 #inpute-field{
     margin-top: 60px;
@@ -91,32 +105,32 @@ hr{
     margin: auto;
     color: #707070;
 }
-/*-end--scend-section--*/
+/*-end--sccond-section--*/
 /*--start--third--section*/
-.third-section{
-    width: 100%;
-    height: 640px;
+.donate-plan{
+    margin: 90px 0;
 }
-.donate-plan-text{
+.donate-plan-title {
     text-align: center;
+
 }
-.donate-plan-text h1{
+.donate-plan-title h1{
     font-size: 45px;
     font-weight: bold;
 
 }
-.donate-plan-text p{
+.donate-plan-title p{
     padding-top: 20px;
     font-size: 18px;
     color: #707070;
 }
-.donate-plan {
+.donate-box-wrapper{
     display: flex;
     padding-left: 40px;
     padding-right:40px;
     padding-top: 50px;
 }
-.card {
+.donate-box {
     width: 40%;
     height: 330px;
     margin-left: 20px;
@@ -124,17 +138,17 @@ hr{
     margin-top: 40px;
     padding: 20px;
 }
-.card img {
+.donate-box img {
     padding-top: 40px;
 }
-.card h2 {
+.donate-box h2 {
     padding-top: 30px;
     font-size: 28px;
     font-weight: bold;
 }
-.card p{
+.donate-box p{
     padding-top: 20px;
-    font-size: 18px;
+    font-size: 19px;
     color: #707070;;
 }
 div#Food {
@@ -147,51 +161,107 @@ div#Education {
     background-color: rgb(243, 230, 194);
 }
 /*-end-third-section-*/
-/*--start--four--sectio*/
-.four-section{
-    width: 100%;
-    height: 500px;
+/*--start--fourth--sectio*/
+.latest-blog {
+    margin: 80px 0;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.get-my-updates {
+.latest-blog-title h1 {
+    margin: 50px 0;
+    font-size: 45px;
     text-align: center;
 }
+.blog-text-album {
+    display: flex;
+    justify-content: center;
+}
+.latest-blog-text{
+    width: 33%;
+}
+.latest-blog-text h2 {
+    width: 250px;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #23b1e9;
+    color: #ffff;
+    text-align: center;
+}
+.latest-blog-text p {
+    font-size: 20px;
+    margin: 65px 0;
+}
+.blog-text-album a {
+    padding: 15px 25px;
+    background-color: #23b1e9;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 900;
+}
+.best-moment-album{
+    width: 33%;
 
-.get-my-updates h1 {
+}
+.best-moment-album .photo{
+    padding: 10px 15px;
+}
+.best-moment-album .photo img{
+    width: 100%;
+}
+
+.best-moment-album .last-image{
+    margin-top: 10px;
+
+}
+/* end--fourth-section */
+
+/* start--fifth--section */
+.get-updates {
+    margin: 80px 0;
+}
+.get-my-updates-title {
+    text-align: center;
+}
+.get-my-updates-title h2 {
     font-size: 45px;
     font-weight: bold;
 
 }
-
-.get-my-updates p {
+.get-my-updates-title p {
     padding-top: 20px;
     font-size: 18px;
     color: #707070;
 }
 .email-section {
+    background: #e7e5ac;
+    width: 661px;
+    display: block;
+    margin: 80px auto;
+    padding: 73px;
     display: flex;
     justify-content: center;
-    margin-top: 110px;
-    width: 50%;
-    margin-left: 20%;
-    padding: 70px;
-    background-color: #FFF4D6;
 }
-input.email {
-    padding: 20px;
+.email {
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
 }
-.subscribe {
-    text-decoration: none;
-    padding: 19px;
+.subscribe-btn {
+    width: 120px;
+    background-color: #de1e42;
     border: none;
-    background-color: #FF5959;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 3px;
 }
-/*-end-four-section-*/
+.subscribe-btn a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+/*-end-fifth-section-*/
 /* footer-section*/
 .footer-section{
     width: 100%;
